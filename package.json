@@ -1,6 +1,5 @@
 {
-  "homepage": "https://sonsaleaditya.github.io/Text-Utilus",
-  "name": "text-utilus",
+  "homepage": "https://sonsaleaditya.github.io/TextUtils" ,
   "version": "1.0.0",
   "scripts": {
     "start": "react-scripts start",
