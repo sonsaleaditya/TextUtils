@@ -55,14 +55,14 @@ useEffect(()=>{
                 <div className="mb-3">
                     <textarea className= {`form-control bg-${Colour.bgColour} text-${Colour.textColour}`} id="myBox" rows="8" value={text} onChange={handleChange}></textarea>
                 </div>
-                <button className="btn btn-primary mx-2" onClick={handleCaseToggle}>{buttonLabel}</button>
-                <button className="btn btn-primary" onClick={handleClearClick}>Clear</button>
+                <button className="btn btn-primary mx-2 my-1" onClick={handleCaseToggle}>{buttonLabel}</button>
+                <button className="btn btn-primary mx-2 my-1" onClick={handleClearClick}>Clear</button>
             </div>
 
             <div className={`my-3 bg-${Colour.bgColour} text-${Colour.textColour}`}>
                 <h1>Your text summary</h1>
                 <p>{wordCount} words and {charCount} characters</p>
-                <p>{0.008 * text.split(" ").length} Minutes read</p>
+                <p>{0.008 * text.split(" ").filter((element)=>{return element.length!==0}).length} Minutes read</p>
                 <h2>preview </h2>
                 <p>{text}</p>
             </div>
