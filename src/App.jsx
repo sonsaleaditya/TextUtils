@@ -67,7 +67,7 @@ function App() {
   ]);
 
   return (
-    <div className={`bg-${bg}`}>
+    <div className={`bg-${bg}  overflow-hidden` } style={{ height: "100vh" , }}  >
    <RouterProvider router={router}></RouterProvider>
     </div>
   );

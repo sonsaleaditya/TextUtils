@@ -49,8 +49,8 @@ useEffect(()=>{
 
 
     return (
-        <>
-            <div className={`bg-${Colour.bgColour} text-${Colour.textColour}`}>
+        <div className='container'>
+            <div className={`bg-${Colour.bgColour} text-${Colour.textColour}`} >
                 <h1>{props.heading}</h1>
                 <div className="mb-3">
                     <textarea className= {`form-control bg-${Colour.bgColour} text-${Colour.textColour}`} id="myBox" rows="8" value={text} onChange={handleChange}></textarea>
@@ -66,6 +66,6 @@ useEffect(()=>{
                 <h2>preview </h2>
                 <p>{text}</p>
             </div>
-        </>
+        </div>
     );
 }
